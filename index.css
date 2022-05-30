@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header Style */
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+
+}
+
+.navegation {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.navegation-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.navegation-list li {
+  padding: 0.5rem;
+}
+
+/* List book section style */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.listBooks {
+  font-size: 1.6rem;
+  width: 60%;
+}
+
+.listBooks ul {
+  margin: 0;
+  padding: 1rem 1rem;
+  list-style: none;
+  background-color: brown;
+}
+
+.listBooks ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerTitleAuthor {
+  display: flex;
+  gap: 5rem;
+}
+
+/* Add new section style */
+.addNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addNew fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.addNew fieldset input {
+  margin-bottom: 1.5rem;
+}
+
+.btn-container {
+  align-self: flex-end;
+}
+
+/* About section style */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  text-align: center;
+}
+
+.about ul li {
+  margin-bottom: 1rem;
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Awsome Books</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navegation">
+      <a href="#">Awsome Books</a>
+      <ul class="navegation-list">
+        <li><a href="#">List</a></li>
+        <li><a href="#">Add New</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="date"></section>
+    <section id="all-books" class="listBooks">
+      <ul id="book-list">
+      </ul>
+    </section>
+    <section class="addNew">
+      <hr>
+      <h1>Add a New Book</h1>
+      <fieldset>
+        <input type="text" name="new-title" id="new-title" placeholder="Title">
+        <input type="text" name="new-author" id="new-author" placeholder="Author">
+        <div class="btn-container">
+          <button id="add-book">Add</button>
+        </div>
+      </fieldset>
+    </section>
+    <section class="about">
+      <h2>Contact Information</h2>
+      <p>Do you have any questions or just want to say "Hello"? <br>Reach us out!</p>
+      <ul>
+        <li>Send us a message! <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+        <li>Give us a call! <a href="tel:+5491154369555">+5491154369555</a></li>
+        <li>Visit us! 1344 Main St, City, Country</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Created by DMW &copy; All Rights Reserved</p>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
