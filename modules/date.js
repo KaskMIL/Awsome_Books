@@ -1,4 +1,4 @@
-import { DateTime} from './luxon.js';
+import { DateTime } from './luxon.js';
 
 const displayHour = (clock) => {
   setInterval(() => {

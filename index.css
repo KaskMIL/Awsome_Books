@@ -4,7 +4,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -27,7 +30,7 @@ header {
   margin-bottom: 2rem;
   border: 0.1rem black solid;
   padding: 1rem;
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 header a {
@@ -54,6 +57,18 @@ header a {
 .navegation-list li {
   padding: 0 0.8rem;
   border-left: 0.1rem solid black;
+}
+
+.about ul li {
+  margin-bottom: 1rem;
+}
+
+.listBooks ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(59, 36, 36);
+  color: white;
 }
 
 .navegation-list li:hover {
@@ -94,14 +109,6 @@ main {
   margin: 0;
   padding: 1rem 1rem;
   list-style: none;
-}
-
-.listBooks ul li {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: rgb(59, 36, 36);
-  color: white;
 }
 
 .listBooks ul li:nth-child(2n) {
@@ -151,10 +158,6 @@ main {
   text-align: center;
 }
 
-.about ul li {
-  margin-bottom: 1rem;
-}
-
 /* Footer section */
 footer {
   display: flex;
@@ -170,4 +173,3 @@ footer {
 .hide {
   display: none;
 }
-
