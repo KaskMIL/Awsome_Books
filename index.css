@@ -142,3 +142,8 @@ footer {
   justify-content: center;
 }
 
+/* Hide class */
+.hide {
+  display: none;
+}
+
