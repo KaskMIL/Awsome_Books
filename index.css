@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header Style */
+header {
+  margin-bottom: 2rem;
+  border: 0.1rem black solid;
+  padding: 1rem;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.navegation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navegation-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.navegation-list li {
+  padding: 0 0.8rem;
+  border-left: 0.1rem solid black;
+}
+
+.about ul li {
+  margin-bottom: 1rem;
+}
+
+.listBooks ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(59, 36, 36);
+  color: white;
+}
+
+.navegation-list li:hover {
+  background-color: rgb(162, 162, 162);
+  cursor: pointer;
+}
+
+/* List book section style */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.dateSection {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.border {
+  border: 0.1rem solid black;
+}
+
+.listBooks h2 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.listBooks {
+  font-size: 1.6rem;
+  width: 60%;
+}
+
+.listBooks ul {
+  margin: 0;
+  padding: 1rem 1rem;
+  list-style: none;
+}
+
+.listBooks ul li:nth-child(2n) {
+  background-color: white;
+  color: black;
+}
+
+.containerTitleAuthor {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+/* Add new section style */
+.addNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addNew hr {
+  width: 100%;
+}
+
+.addNew fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.addNew fieldset input {
+  margin-bottom: 1.5rem;
+}
+
+.btn-container {
+  align-self: flex-end;
+}
+
+/* About section style */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  text-align: center;
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* Hide class */
+.hide {
+  display: none;
+}
