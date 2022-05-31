@@ -1,7 +1,7 @@
 import Book from './modules/book.js';
 import {getLi as getLi, addLi as addLi, deleteLi as deleteLi, removeFromList as removeFromList} from './modules/DOMelements.js';
-import {storeData as storeData, loadData as loadData, fillList as fillList} from './modules/localStorage.js';
-//import {setBorder as setBorder, setStyles as setStyles} from './modules/styles.js';
+import {storeData as storeData, loadData as loadData} from './modules/localStorage.js';
+import {setBorder as setBorder} from './modules/styles.js';
 
 //DOM variables
 const bookList = document.getElementById('book-list');
@@ -13,8 +13,8 @@ let bookData = [];
 
 //Load localStorage
 window.addEventListener('load', () => {
-  loadData(bookData, bookList);
-  bookData = [...fillList()];
+  bookData = [...loadData(bookList)];
+  setBorder(allBooks, bookData);
 });
 
 addBook.addEventListener('click', () => {
@@ -23,10 +23,9 @@ addBook.addEventListener('click', () => {
     const book = new Book(`"${newTitle.value}"`, `by ${newAuthor.value}`, `book${id}`, bookData);
     book.addBook(bookData);
     addLi(bookList, getLi(book));
-    //setBorder(allBooks);
+    setBorder(allBooks, bookData);
     storeData(bookData);
-    //setStyles();
-  }
+  };
   newTitle.value = '';
   newAuthor.value = '';
 })
@@ -36,6 +35,7 @@ bookList.addEventListener('click', e => {
     deleteLi(e.target.parentNode.id);
     bookData = [...removeFromList(e.target.parentNode.id, bookData)];
     storeData(bookData);
+    setBorder(allBooks, bookData);
   };
 });
 

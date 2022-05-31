@@ -4,17 +4,12 @@ export function storeData(list) {
   localStorage.setItem('bookData',JSON.stringify(list));
 }
 
-export function loadData(list, nodeContainer) {
-  const data = localStorage.getItem('bookData');
+export function loadData(nodeContainer) {
+  const data = JSON.parse(localStorage.getItem('bookData'));
   if(data) {
-    list = JSON.parse(data);
-    list.forEach(book => {
+    data.forEach(book => {
       addLi(nodeContainer, getLi(book));
     })
-  }
-}
-
-export function fillList () {
-  const data = JSON.parse(localStorage.getItem('bookData'));
+  };
   return data;
 }

@@ -20,11 +20,14 @@ ul {
 }
 
 /* Header Style */
+header {
+  margin-bottom: 2rem;
+}
+
 header a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
-
 }
 
 .navegation {
@@ -53,6 +56,15 @@ main {
   font-size: 1.8rem;
 }
 
+.border {
+  border: 0.1rem solid black;
+}
+
+.listBooks h2 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
 .listBooks {
   font-size: 1.6rem;
   width: 60%;
@@ -62,17 +74,25 @@ main {
   margin: 0;
   padding: 1rem 1rem;
   list-style: none;
-  background-color: brown;
 }
 
 .listBooks ul li {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(59, 36, 36);
+  color: white;
+}
+
+.listBooks ul li:nth-child(2n) {
+  background-color: white;
+  color: black;
 }
 
 .containerTitleAuthor {
   display: flex;
-  gap: 5rem;
+  width: 50%;
+  justify-content: space-between;
 }
 
 /* Add new section style */
@@ -80,6 +100,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.addNew hr {
+  width: 100%;
 }
 
 .addNew fieldset {
