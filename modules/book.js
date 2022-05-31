@@ -1,14 +1,13 @@
 export default class Book {
-  constructor(title = 'title', author = 'author', id = '0', list) {
+  constructor(title = 'title', author = 'author', id = '0') {
     this.title = title;
     this.author = author;
     this.id = id;
-    this.list = list;
   }
 
-  addBook() {
+  addBook(list) {
     // This will add itself to the bookData Array
-    this.list.push(this);
+    list.push(this);
   }
 
   removeBook() {
