@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -10,7 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 1rem;
+  padding: 10rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -22,17 +25,21 @@ ul {
 /* Header Style */
 header {
   margin-bottom: 2rem;
+  border: 0.1rem black solid;
+  padding: 1rem;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 header a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .navegation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -45,7 +52,13 @@ header a {
 }
 
 .navegation-list li {
-  padding: 0.5rem;
+  padding: 0 0.8rem;
+  border-left: 0.1rem solid black;
+}
+
+.navegation-list li:hover {
+  background-color: rgb(162, 162, 162);
+  cursor: pointer;
 }
 
 /* List book section style */
@@ -54,6 +67,13 @@ main {
   flex-direction: column;
   align-items: center;
   font-size: 1.8rem;
+}
+
+.dateSection {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
 }
 
 .border {
@@ -140,6 +160,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 /* Hide class */

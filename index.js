@@ -2,7 +2,8 @@ import Book from './modules/book.js';
 import {getLi as getLi, addLi as addLi, deleteLi as deleteLi, removeFromList as removeFromList} from './modules/DOMelements.js';
 import {storeData as storeData, loadData as loadData} from './modules/localStorage.js';
 import {setBorder as setBorder} from './modules/styles.js';
-import {hide as hide, show as show} from './modules/nav.js'
+import {hide as hide, show as show} from './modules/nav.js';
+import displayHour from './modules/date.js'
 
 //DOM variables
 const bookList = document.getElementById('book-list');
@@ -15,7 +16,10 @@ const addNewBtn = document.getElementById('addNew');
 const aboutBtn = document.getElementById('about');
 const addNewSection = document.getElementById('addNewSection');
 const aboutSection = document.getElementById('aboutSection');
+const clock = document.getElementById('date');
 let bookData = [];
+
+displayHour(clock);
 
 //Load localStorage
 window.addEventListener('load', () => {

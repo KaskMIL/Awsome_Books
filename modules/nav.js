@@ -1,9 +1,5 @@
 //Funtion to hide content
-export function hide(section) {
-  section.classList.add('hide');
-}
+export let hide = (section) => section.classList.add('hide');
 
 //Function to show content
-export function show(section) {
-  section.classList.remove('hide');
-}
+export let show = (section) => section.classList.remove('hide');
